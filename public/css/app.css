@@ -70,9 +70,9 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #0d0d0e;
+  color: #212529;
   text-align: left;
-  background-color: #f8fafc;
+  background-color: white;
 }
 
 [tabindex="-1"]:focus {
@@ -82,7 +82,8 @@ body {
 hr {
   box-sizing: content-box;
   height: 0;
-  overflow: visible;
+  overflow: hidden;
+  border: hidden;
 }
 
 h1,
@@ -92,6 +93,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -395,9 +397,7 @@ h6,
 
 h1,
 .h1 {
-  margin-top: 2rem;
   font-size: 2.25rem;
-  color: grey;
 }
 
 h2,
@@ -407,13 +407,15 @@ h2,
 
 h3,
 .h3 {
-  margin-top: 1rem;
-  font-size: 1.575rem;
+
+  font: 3rem "Times New Roman", Times, serif;
+  color: cadetblue;
 }
 
 h4,
 .h4 {
-  font-size: 1.35rem;
+  color: firebrick ;
+  font: 1.35rem "Times New Roman", Times, serif;
 }
 
 h5,
@@ -519,7 +521,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #f8fafc;
+  background-color: white;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -4099,15 +4101,15 @@ input[type=button].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 1px white, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 1px white, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 1px white, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
 .custom-range::-moz-focus-outer {
@@ -4307,8 +4309,8 @@ input[type=button].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #f8fafc;
-  border-color: #dee2e6 #dee2e6 #f8fafc;
+  background-color: white;
+  border-color: #dee2e6 #dee2e6 white;
 }
 
 .nav-tabs .dropdown-menu {
@@ -4347,7 +4349,9 @@ input[type=button].btn-block {
 }
 
 .navbar {
-  position: relative;
+  position: relative ;
+  z-index: 1;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -10644,5 +10648,27 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+.carousel{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: darkgrey;
+}
+
+.carousel-indicators .active{
+    background-color: black;
 }
 
