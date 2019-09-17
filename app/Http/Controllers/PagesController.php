@@ -27,10 +27,4 @@ class PagesController extends Controller
 
         return view('pages.services')->with($data);
     }
-
-    public function contact(){
-
-
-        return view('pages.contact');
-    }
 }
