@@ -18,7 +18,7 @@
     <body>
         <div class="container">
             @include('inc.messages')
-            <div class = "jumbotron text-center">
+            <div class = "jumbotron ">
                 @yield('content')
             </div>
         </div>
