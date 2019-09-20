@@ -23,6 +23,9 @@ Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 
+Route::get('/contact', 'ContactController@contact');
+Route::post('contact', ['as'=>'contact.store', 'uses'=>'ContactController@store']);
+
 Route::resource('posts', 'PostsController');
 
 Auth::routes();
