@@ -1,13 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Contact;
 
 use Illuminate\Http\Request;
+use DB;
 
 class ContactController extends Controller
 {
     public function create(){
-        
+
     }
     public function contact(){
         return view('pages.contact');
@@ -20,7 +22,11 @@ class ContactController extends Controller
             'message' => 'required'
         ]);
 
-        Contact::create($request->all);
+        $contact = new Contact;
+        $contact->name = $request->input('name');
+        $contact->email = $request->input('email');
+        $contact->message = $request->input('message');
+        $contact->save();
 
         return redirect('/contact')->with('success', 'Message Received Successfully');
     }
