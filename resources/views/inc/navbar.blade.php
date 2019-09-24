@@ -13,15 +13,18 @@
             <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="/about">About</a>
-                        </li>
-                        <li class="nav-item active">
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="/services">Services</a>
-                        </li>
-                        <li class="nav-item active">
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="/posts">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/contact">Contact Us</a>
                     </li>
             </ul>
 
